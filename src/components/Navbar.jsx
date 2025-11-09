@@ -8,6 +8,7 @@ export default function AppNavbar() {
 
   return (
     <Navbar
+      id="mynavbar"
       bg="light"
       expand="md"
       sticky="top"

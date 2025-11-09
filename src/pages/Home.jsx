@@ -15,36 +15,38 @@ export default function Home() {
 
   return (
     <div className="home-page" dir="rtl">
-      <header className="hero">
-        <h1 className="hero-title">נאנקינג טאי צ'י</h1>
-        <p className="hero-sub">בית הספר לאומנויות לחימה</p>
-      </header>
+      <div className="mycard">
+        <header className="hero">
+          <h1 className="hero-title">נאנקינג טאי צ'י</h1>
+          <p className="hero-sub">בית הספר לאומנויות לחימה</p>
+        </header>
 
-      <Swiper
-        spaceBetween={30}
-        effect={"fade"}
-        navigation={true}
-        pagination={{
-          clickable: true,
-        }}
-        loop={true}
-        autoplay={{ delay: 3000 }}
-        modules={[EffectFade, Navigation, Pagination, Autoplay]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </SwiperSlide>
-      </Swiper>
+        <Swiper
+          spaceBetween={30}
+          effect={"fade"}
+          navigation={true}
+          pagination={{
+            clickable: true,
+          }}
+          loop={true}
+          autoplay={{ delay: 3000 }}
+          modules={[EffectFade, Navigation, Pagination, Autoplay]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </div>
   );
 }

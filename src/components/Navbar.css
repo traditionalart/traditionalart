@@ -8,8 +8,16 @@
   background-color: inherit;
 }
 
+.nav-link {
+  color: white !important;
+}
+
 .navbar .container {
   background-color: inherit;
+}
+
+#mynavbar {
+  background-color: var(--dark-red) !important;
 }
 
 @media (min-width: 768px) {

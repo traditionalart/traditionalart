@@ -3,25 +3,33 @@
 
 /* Base styles and layout */
 .home-page {
+  padding: 2rem;
+}
+
+.mycard {
+  border-radius: 20px;
+  box-shadow: 3px 3px 4px #1e00004c;
+  border: 1px solid rgb(113 55 55);
   display: flex;
   direction: rtl;
   align-items: flex-start;
   flex-direction: row;
   font-family: "Heebo", sans-serif;
-  padding: 2rem 1.5rem;
   justify-content: center;
-  gap: 2rem;
   width: 100%;
+  overflow: hidden;
 }
 
 .hero {
   flex: 1;
   padding: 10px;
   height: 1000px;
-  background-color: rgba(255, 255, 255, 0.581);
-  backdrop-filter: blur(5px);
-  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
   width: 100%;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  backdrop-filter: blur(8px);
 }
 
 .hero-title {
@@ -29,7 +37,7 @@
   font-weight: 900;
   line-height: 1.1;
   margin-bottom: 1rem;
-  color: #531717;
+  color: #fffbfb;
   letter-spacing: -0.02em;
 }
 
@@ -37,7 +45,7 @@
   font-size: clamp(1.125rem, 2vw, 1.35rem);
   font-weight: 400;
   line-height: 1.5;
-  color: #4a4a4a;
+  color: #3b3b3b;
   margin-bottom: 2rem;
 }
 
@@ -48,11 +56,9 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .home-page {
+  .mycard {
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem 1rem;
-    gap: 1.5rem;
   }
 
   .hero-title {

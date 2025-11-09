@@ -1,10 +1,39 @@
+:root {
+  --dark-red: rgb(51, 10, 10);
+}
+
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: #212529;
-  background-image: url(./assets/bgg.png);
-  background-size: 600px;
+  color: white;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+#bg-image {
+  background-image: url(./assets/fans.svg);
+  position: fixed;
+  background-size: 300px;
+}
+
+#bg-gradient {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.062),
+    rgba(255, 255, 255, 0),
+    rgba(59, 0, 0, 0.473)
+  );
 }
 
 .content {
+  position: relative;
+}
+
+:not(.background) {
+  z-index: 10;
 }
