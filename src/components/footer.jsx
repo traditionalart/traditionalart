@@ -43,10 +43,6 @@ export default function Footer() {
           </a>
         </div>
       </div>
-
-      <div className="footer-bottom">
-        © {new Date().getFullYear()} כל הזכויות שמורות.
-      </div>
     </footer>
   );
 }

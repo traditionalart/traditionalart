@@ -12,16 +12,18 @@ export default function App() {
     <>
       <div id="bg-image" className="background"></div>
       <div id="bg-gradient" className="background"></div>
-      <Navbar />
-      <main className="content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/teacher" element={<Teacher />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </main>
-      <Footer />
+      <div id="everything">
+        <Navbar />
+        <main id="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/teacher" element={<Teacher />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }

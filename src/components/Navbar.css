@@ -9,7 +9,8 @@
 }
 
 .nav-link {
-  color: white !important;
+  color: var(--text);
+  font-family: mainFont;
 }
 
 .navbar .container {
@@ -17,7 +18,8 @@
 }
 
 #mynavbar {
-  background-color: var(--dark-red) !important;
+  background-color: var(--background) !important;
+  z-index: 1000;
 }
 
 @media (min-width: 768px) {
