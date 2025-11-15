@@ -84,3 +84,72 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accentDark);
 }
+
+/*card*/
+
+.mycard {
+  display: flex;
+  direction: rtl;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  font-family: "Heebo", sans-serif;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-info {
+  flex: 1;
+  flex-basis: 0;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-info.centered {
+  align-items: center;
+}
+
+.card-graphic {
+  flex: 1;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 400px;
+  height: auto;
+}
+
+.info-box {
+  padding: 1rem;
+  background-color: var(--accentLight);
+  border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .mycard.padded {
+    gap: 30px;
+    padding: 30px;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mycard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-info {
+    padding: 20px;
+  }
+
+  .card-graphic {
+    flex-basis: unset;
+  }
+}

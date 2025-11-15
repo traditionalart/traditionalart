@@ -8,11 +8,6 @@
   background-color: inherit;
 }
 
-#logo,
-.navbar-brand {
-  height: 100%;
-}
-
 .nav-link {
   color: var(--text);
   font-family: mainFont;
@@ -41,6 +36,19 @@
   box-shadow: none;
 }
 
+.navbar-brand {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 @media (min-width: 768px) {
   .overlay-collapse {
     position: static; /* normal behavior on desktop */
@@ -48,13 +56,13 @@
 }
 
 @media (max-width: 768px) {
-  #logo,
-  .navbar-brand {
-    height: unset;
-    max-width: 100%; /* don’t exceed container width */
-    height: auto; /* maintain aspect ratio */
+  .navbar .container {
+    justify-content: flex-start;
   }
 
+  .navbar-brand {
+    margin-right: 20px;
+  }
   .overlay-collapse {
     padding-bottom: 10px;
   }

@@ -38,10 +38,10 @@ export default function AppNavbar() {
             <Nav.Link
               className="clickable"
               as={NavLink}
-              to="/about"
+              to="/taichi"
               onClick={() => setExpanded(false)}
             >
-              האומנויות
+              טאי צ'י
             </Nav.Link>
             <Nav.Link
               className="clickable"

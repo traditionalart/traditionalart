@@ -2,6 +2,7 @@
   display: inline-block; /* shrink to content width */
   text-align: center; /* center text and line */
   position: relative;
+  margin-bottom: 1rem;
 }
 
 .title {
@@ -13,6 +14,6 @@
   display: block;
   width: 100%;
   height: auto;
-  margin-top: 0.5rem; /* spacing between text and line */
+  margin-top: 0.25rem; /* spacing between text and line */
   fill: var(--text);
 }

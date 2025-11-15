@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Taichi from "./pages/taichi";
 import Contact from "./pages/Contact";
 import Teacher from "./pages/Teacher";
 import Footer from "./components/footer";
@@ -17,7 +18,7 @@ export default function App() {
         <main id="content">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/taichi" element={<Taichi />} />
             <Route path="/teacher" element={<Teacher />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

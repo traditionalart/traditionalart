@@ -16,9 +16,9 @@ export default function Home() {
   //const images = ["./slideshow/img1", "./slideshow/img2", "./slideshow/img3"]ddfdfd;
 
   return (
-    <div className="home-page" dir="rtl">
+    <div className="page">
       <div className="mycard">
-        <header className="hero">
+        <header className="card-info">
           <h1 className="hero-title">נאנקינג טאי צ'י </h1>
           <p className="hero-sub">בית הספר לאומנויות לחימה</p>
         </header>
@@ -29,7 +29,7 @@ export default function Home() {
           loop={true}
           autoplay={{ delay: 3000 }}
           modules={[EffectFade, Autoplay]}
-          className="mySwiper"
+          className="card-graphic"
         >
           <SwiperSlide>
             <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
