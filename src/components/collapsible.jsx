@@ -1,15 +1,34 @@
-import { useState, useRef, useEffect } from "react";
+import {
+  useState,
+  useRef,
+  useEffect,
+  forwardRef,
+  useImperativeHandle,
+} from "react";
 import "./Collapsible.css";
 
-export default function Collapsible({ title, children }) {
+const Collapsible = forwardRef(function Collapsible({ title, children }, ref) {
   const [open, setOpen] = useState(false);
   const [rot, setRot] = useState(0);
   const contentRef = useRef(null);
+  const headerRef = useRef();
 
   const toggle = () => {
-    setOpen((prev) => !prev);
-    setRot((prev) => prev - 180);
+    setOpen((p) => !p);
+    setRot((p) => p - 180);
   };
+
+  useImperativeHandle(ref, () => ({
+    open: () => {
+      if (!open) toggle();
+    },
+    scrollTo: () => {
+      headerRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    },
+  }));
 
   useEffect(() => {
     const content = contentRef.current;
@@ -22,7 +41,7 @@ export default function Collapsible({ title, children }) {
 
   return (
     <div className="collapsible" dir="rtl">
-      <div className="collapsible-header" onClick={toggle}>
+      <div className="collapsible-header" ref={headerRef} onClick={toggle}>
         <svg
           className={`ying ${open ? "open" : ""}`}
           style={{ transform: `rotate(${rot}deg)` }}
@@ -38,4 +57,6 @@ export default function Collapsible({ title, children }) {
       </div>
     </div>
   );
-}
+});
+
+export default Collapsible;

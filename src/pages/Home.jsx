@@ -23,27 +23,28 @@ export default function Home() {
           <p className="hero-sub">בית הספר לאומנויות לחימה</p>
         </header>
 
-        <Swiper
-          effect={"fade"}
-          speed={1200}
-          loop={true}
-          autoplay={{ delay: 3000 }}
-          modules={[EffectFade, Autoplay]}
-          className="card-graphic"
-        >
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-          </SwiperSlide>
-        </Swiper>
+        <div class="card-graphic">
+          <Swiper
+            effect={"fade"}
+            speed={1200}
+            loop={true}
+            autoplay={{ delay: 3000 }}
+            modules={[EffectFade, Autoplay]}
+          >
+            <SwiperSlide>
+              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
       <Title text="My Section Title" />
 

@@ -116,18 +116,26 @@ body {
   flex: 1;
   flex-basis: 0;
   max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
-img {
+.image {
   max-width: 100%;
-  max-height: 400px;
   height: auto;
+  max-height: 400px;
 }
 
 .info-box {
   padding: 1rem;
   background-color: var(--accentLight);
   border-radius: 10px;
+}
+
+.hyperlink {
+  cursor: pointer;
+  font-weight: 600;
 }
 
 /* Responsive adjustments */
