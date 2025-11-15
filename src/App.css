@@ -1,10 +1,10 @@
 :root {
   --text: #1d1d1d;
   --background: #ffffff;
-  --secondary: #e1e1e1;
+  --primary: #ffecd7;
   --accentLight: #d9f3d5;
-  --primaryDark: #463333;
-  --accent: #baebb3;
+  --primaryDark: #000000;
+  --accent: #b6e8af;
   --accentDark: #93da93;
   --accentDarkest: #15731d;
 }
@@ -115,10 +115,17 @@ body {
 .card-graphic {
   flex: 1;
   flex-basis: 0;
-  max-width: 100%;
+  max-width: 50%;
   align-items: center;
   justify-content: center;
   display: flex;
+  overflow: hidden;
+  max-height: 500px;
+}
+
+.swiper {
+  width: 100%;
+  height: 200%;
 }
 
 .image {
@@ -129,13 +136,23 @@ body {
 
 .info-box {
   padding: 1rem;
-  background-color: var(--accentLight);
+  background-color: var(--primary);
   border-radius: 10px;
 }
 
 .hyperlink {
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 550;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0.3);
+}
+.hyperlink:hover {
+  text-decoration-color: black;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* Responsive adjustments */

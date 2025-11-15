@@ -65,6 +65,7 @@ export default function ContactForm() {
           <input
             type="text"
             name="name"
+            autoComplete="name"
             value={formData.name}
             onChange={handleChange}
             placeholder="שם"
@@ -76,6 +77,7 @@ export default function ContactForm() {
           <input
             type="tel"
             name="phone"
+            autoComplete="tel"
             value={formData.phone}
             onChange={handleChange}
             placeholder="טלפון"

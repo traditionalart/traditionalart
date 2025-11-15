@@ -1,6 +1,7 @@
 .collapsible {
   border-radius: 8px;
   overflow: hidden;
+  margin: 0.5rem;
 }
 
 /* header */
@@ -8,12 +9,12 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: 0.6rem 1rem;
   user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
   -o-user-select: none;
+  margin-bottom: 0.5rem;
 }
 
 /* svg icon */
@@ -30,9 +31,9 @@
 }
 
 /* title */
-.collapsible-header > .title {
+.title {
   flex: 1;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 

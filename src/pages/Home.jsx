@@ -18,10 +18,7 @@ export default function Home() {
   return (
     <div className="page">
       <div className="mycard">
-        <header className="card-info">
-          <h1 className="hero-title">נאנקינג טאי צ'י </h1>
-          <p className="hero-sub">בית הספר לאומנויות לחימה</p>
-        </header>
+        <header className="card-info centered">נאנקינג טאי' צי'</header>
 
         <div class="card-graphic">
           <Swiper
@@ -46,16 +43,6 @@ export default function Home() {
           </Swiper>
         </div>
       </div>
-      <Title text="My Section Title" />
-
-      <Collapsible title="כותרת גדולה">
-        <p>זה תוכן שנחשף כשמקישים על הכותרת</p>
-      </Collapsible>
-      <Collapsible title="כותרת גדולה">
-        <p>זה תוכן שנחשף כשמקישים על הכותרת</p>
-        <p>זה תוכן שנחשף כשמקישים על הכותרת</p>
-        <p>זה תוכן שנחשף כשמקישים על הכותרת</p>
-      </Collapsible>
     </div>
   );
 }

@@ -4,7 +4,7 @@ import "./title.css";
 export default function Title({ text }) {
   return (
     <div className="title-wrapper">
-      <h2 className="title">{text}</h2>
+      <h2 className="lined-title">{text}</h2>
       <LineSvg className="title-line" />
     </div>
   );
