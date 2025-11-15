@@ -18,7 +18,7 @@ export default function Footer() {
             </a>
           </p>
           <p class="footer-link">
-            <a href="tel:+972504587058" className="map-link">
+            <a href="tel:+972584587058" className="map-link">
               <i className="fa-solid fa-phone"></i>058-458-7058
             </a>
           </p>

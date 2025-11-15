@@ -2,7 +2,6 @@
   position: absolute;
   top: 100%; /* right below the navbar */
   left: 0;
-  width: 100%;
   z-index: 999; /* make sure it appears on top */
   padding: inherit;
   background-color: inherit;
@@ -14,17 +13,32 @@
 }
 
 .navbar .container {
-  background-color: inherit;
   height: 100%;
   position: relative;
   flex-wrap: nowrap;
 }
 
 #mynavbar {
-  background-color: var(--background) !important;
   z-index: 1000;
   height: 80px;
   position: sticky;
+  padding: 0;
+  justify-content: center;
+  background-color: rgb(250, 249, 245) !important;
+}
+
+#mynavbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/leaves.svg");
+  background-size: 1500px;
+  background-position: -130px 5px;
+  background-repeat: repeat-x;
+  opacity: 0.2; /* adjust */
+  pointer-events: none;
+  z-index: 0;
+  height: 100%;
 }
 
 .navbar-toggler,
@@ -38,10 +52,13 @@
 
 .navbar-brand {
   height: 100%;
+  flex-grow: 1;
   padding: 0;
   margin: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 5px 0;
 }
 
 #logo {
@@ -58,6 +75,8 @@
 @media (max-width: 768px) {
   .navbar .container {
     justify-content: flex-start;
+    margin: 0;
+    max-width: unset !important;
   }
 
   .navbar-brand {
@@ -65,6 +84,10 @@
   }
   .overlay-collapse {
     padding-bottom: 10px;
+    width: 100%;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: var(--bs-box-shadow-sm);
   }
 
   .nav-link {

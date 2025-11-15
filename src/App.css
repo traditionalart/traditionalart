@@ -1,7 +1,7 @@
 :root {
   --text: #1d1d1d;
   --background: #ffffff;
-  --primary: #ffecd7;
+  --primary: #fff3e5;
   --accentLight: #d9f3d5;
   --primaryDark: #000000;
   --accent: #b6e8af;
@@ -25,6 +25,10 @@
   font-family: "mainFontBold";
   src: url(./assets/NotoSansHebrew.ttf);
   font-weight: 700;
+}
+
+html {
+  overflow-y: scroll;
 }
 
 body {
@@ -115,7 +119,6 @@ body {
 .card-graphic {
   flex: 1;
   flex-basis: 0;
-  max-width: 50%;
   align-items: center;
   justify-content: center;
   display: flex;

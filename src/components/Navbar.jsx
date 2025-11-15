@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import Banner from "../assets/Banner.png";
+import Banner from "../assets/Banner2.svg";
 
 export default function AppNavbar() {
   const [expanded, setExpanded] = useState(false);

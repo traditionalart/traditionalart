@@ -43,9 +43,9 @@ export default function Taichi() {
             <span className="hyperlink" onClick={() => jumpTo("combat")}>
               והלחימה
             </span>{" "}
-            כדרך לתרגל{" "}
+            כדרך לתרגול{" "}
             <span className="hyperlink" onClick={() => jumpTo("kongfu")}>
-              קונג פו,
+              קונג פו{" "}
             </span>
             לחיזוק הגוף ולהתפתחות נפשית ומנטלית.
           </div>
@@ -84,7 +84,7 @@ export default function Taichi() {
             אופי ייני.
             <br></br>
             <br></br>
-            מתרגל / לוחם של טאי צ’י צ’ואן רואה בתוקף בדרך כלל אדם שיצא מאיזון,
+            מתרגל/לוחם של טאי צ’י צ’ואן רואה בתוקף בדרך כלל אדם שיצא מאיזון,
             ותפקידו של הלוחם להשתדל לפתור את המגע בטכניקות ייניות כדוגמת צ’ין נה
             ולמנוע פגיעה משמעותית בתוקף.
             <br></br>
@@ -93,9 +93,9 @@ export default function Taichi() {
             כשהכוונה לפגיעה קיצונית ככל שידרש.
           </Collapsible>
           <Collapsible ref={collapsibleRefs.current.kongfu} title="קונג פו">
-            פו - אדם.
-            <br></br>
             קונג - תרגול, עיסוק וכדומה.
+            <br></br>
+            פו - אדם.
             <br></br>
             <br></br>
             ניסיונו ושאיפתו של האדם להתפתח פיזית, נפשית ושכלית דרך עיסוק כלשהו.
