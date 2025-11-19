@@ -11,9 +11,9 @@ import "./App.css";
 export default function App() {
   return (
     <>
-      <div id="bg-image" className="background"></div>
       <div id="bg-gradient" className="background"></div>
       <div id="everything">
+        <div id="bg-image" className="background"></div>
         <Navbar />
         <main id="content">
           <Routes>

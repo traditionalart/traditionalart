@@ -1,12 +1,12 @@
 :root {
   --text: #1d1d1d;
   --background: #ffffff;
-  --primary: #fff3e5;
-  --accentLight: #d9f3d5;
+  --primary: #acd5ac;
+  --accentLight: #e57a7a;
   --primaryDark: #000000;
-  --accent: #b6e8af;
+  --accent: #1eff00;
   --accentDark: #93da93;
-  --accentDarkest: #15731d;
+  --accentDarkest: #08200a;
 }
 
 #everything {
@@ -14,6 +14,17 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  position: relative;
+}
+
+#bg-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  background-image: url(assets/paper.jpg);
+  background-size: 1000px;
+  opacity: 30%;
 }
 
 @font-face {
@@ -48,24 +59,79 @@ body {
 
 /*buttons*/
 
-.clickable {
-  border-radius: 10px;
-  transition: background-color 0.5s;
-}
-
 .highlight {
-  background-color: var(--accent);
   border-radius: 10px;
+  position: relative;
 }
 
-.clickable:hover {
-  background-color: var(--accentLight);
-  transition: background-color 0.1s;
+.highlight::before,
+.info-box::before {
+  content: "";
+  width: 110%;
+  mask-image: url(assets/stroke2.png);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  mask-position: center;
+  top: 0;
+  left: 0;
+  right: -4%;
+  bottom: 0;
+  position: absolute;
+  background-color: var(--primary);
+  z-index: -5;
+  mix-blend-mode: multiply;
+  overflow: visible;
 }
 
-.highlight:hover {
-  background-color: var(--accentDark);
-  border-radius: 10px;
+.clickable {
+  position: relative;
+  display: inline-block;
+}
+
+.taper-btn {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 4px 0;
+}
+
+.clickable {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.clickable::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 8px;
+
+  /* make the gradient twice as wide as the element */
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 40%,
+    currentColor 50%,
+    currentColor 100%
+  );
+  background-size: 250% 100%; /* twice the width */
+  background-position: left; /* start fully shifted left */
+
+  mask-image: url(assets/small_underline.png);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  opacity: 0;
+  transition: background-position 2s ease, opacity 0.5s ease;
+}
+
+.clickable:hover::after {
+  background-position: right; /* slide the gradient across the element */
+  opacity: 1;
+  transition: background-position 0.5s ease;
 }
 
 /*scrollbar*/
@@ -97,7 +163,6 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: row;
-  font-family: "Heebo", sans-serif;
   width: 100%;
   overflow: hidden;
 }
@@ -139,8 +204,8 @@ body {
 
 .info-box {
   padding: 1rem;
-  background-color: var(--primary);
   border-radius: 10px;
+  position: relative;
 }
 
 .hyperlink {
