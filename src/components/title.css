@@ -6,7 +6,6 @@
 }
 
 .lined-title {
-  margin: 0;
   font-size: 2rem;
 }
 
@@ -14,7 +13,7 @@
   display: block;
   width: 100%;
   height: auto;
-  margin-top: 0.25rem; /* spacing between text and line */
+  margin: 0.75rem 0;
   fill: var(--text);
 }
 
