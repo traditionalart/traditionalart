@@ -1,7 +1,7 @@
 import { useRef, createRef } from "react";
 import Title from "../components/title";
 import "./taichi.css";
-import TaichiImg from "../assets/pictures/taichi.png";
+import TaichiImg from "../assets/graphics/taichi/taichi.png";
 import Collapsible from "../components/collapsible";
 
 export default function Taichi() {

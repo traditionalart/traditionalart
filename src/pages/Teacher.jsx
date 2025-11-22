@@ -1,8 +1,8 @@
 import Title from "../components/title";
 import "./Teacher.css";
-import teacherPhoto from "../assets/pictures/teacher.jpg";
-import dan1Photo from "../assets/pictures/dan1.svg";
-import dan2Photo from "../assets/pictures/dan2.svg";
+import teacherPhoto from "../assets/graphics/teacher/teacher.jpg";
+import dan1Photo from "../assets/graphics/teacher/dan1.svg";
+import dan2Photo from "../assets/graphics/teacher/dan2.svg";
 
 export default function Teacher() {
   return (

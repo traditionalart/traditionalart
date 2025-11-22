@@ -1,4 +1,4 @@
-import LineSvg from "../assets/line.svg?react";
+import LineSvg from "../assets/graphics/misc/line.svg?react";
 import "./title.css";
 
 export default function Title({ text, subtitle = null }) {

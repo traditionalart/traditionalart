@@ -22,7 +22,7 @@
   height: 100%;
   display: flex;
   position: absolute;
-  background-image: url(assets/paper.jpg);
+  background-image: url(assets/graphics/misc/paper.jpg);
   background-size: 1000px;
   opacity: 30%;
   z-index: 30;
@@ -32,12 +32,12 @@
 
 @font-face {
   font-family: "mainFont";
-  src: url(./assets/NotoSansHebrew.ttf);
+  src: url(assets/fonts/NotoSansHebrew.ttf);
 }
 
 @font-face {
   font-family: "mainFontBold";
-  src: url(./assets/NotoSansHebrew.ttf);
+  src: url(assets/fonts/NotoSansHebrew.ttf);
   font-weight: 700;
 }
 
@@ -68,8 +68,8 @@ body {
 .info-box::before {
   content: "";
   width: 110%;
-  mask-image: url(assets/stroke2.png);
-  -webkit-mask-image: url(assets/stroke2.png);
+  mask-image: url(assets/graphics/misc/stroke2.png);
+  -webkit-mask-image: url(assets/graphics/misc/stroke2.png);
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
   mask-size: 100% 100%;
@@ -125,8 +125,8 @@ body {
   background-size: 250% 100%; /* twice the width */
   background-position: left; /* start fully shifted left */
 
-  mask-image: url(assets/small_underline.png);
-  -webkit-mask-image: url(assets/small_underline.png);
+  mask-image: url(assets/graphics/misc/small_underline.png);
+  -webkit-mask-image: url(assets/graphics/misc/small_underline.png);
 
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;

@@ -37,8 +37,8 @@
 
 #teacher-transition {
   height: 200px;
-  mask-image: url("../assets/transition.svg");
-  -webkit-mask-image: url("../assets/transition.svg");
+  mask-image: url("../assets/graphics/misc/transition.svg");
+  -webkit-mask-image: url("../assets/graphics/misc/transition.svg");
   background-color: var(--primary);
 }
 .bamboo {
@@ -55,13 +55,13 @@
 }
 #bamboo-left {
   left: 5%;
-  mask-image: url("../assets/bambooLeft.svg");
-  -webkit-mask-image: url("../assets/bambooLeft.svg");
+  mask-image: url("../assets/graphics/teacher/bambooLeft.svg");
+  -webkit-mask-image: url("../assets/graphics/teacher/bambooLeft.svg");
 }
 #bamboo-right {
   right: 7%;
-  mask-image: url("../assets/bambooRight.svg");
-  -webkit-mask-image: url("../assets/bambooRight.svg");
+  mask-image: url("../assets/graphics/teacher/bambooRight.svg");
+  -webkit-mask-image: url("../assets/graphics/teacher/bambooRight.svg");
 }
 
 .trophies-row {
