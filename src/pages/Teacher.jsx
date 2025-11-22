@@ -3,6 +3,9 @@ import teacherPhoto from "../assets/graphics/teacher/teacher.jpg";
 import dan1Photo from "../assets/graphics/teacher/dan1.svg";
 import dan2Photo from "../assets/graphics/teacher/dan2.svg";
 import armyPhoto from "../assets/graphics/teacher/army.jpg";
+import karatePhoto from "../assets/graphics/teacher/karate.jpg";
+import schoolPhoto from "../assets/graphics/teacher/school.jpg";
+import libraryPhoto from "../assets/graphics/teacher/library.jpg";
 import BulletList from "../components/BulletList";
 import "./Teacher.css";
 
@@ -45,7 +48,7 @@ export default function Teacher() {
               שמי אפי.<br></br>
               אני לומד ומתאמן מאז 1981.
             </p>
-            <b>שירותי צבאי:</b>
+            <b>שירותי הצבאי:</b>
             <p>
               שירתתי כמג״יסט בגדוד 13 בחטיבת גולני. בחלק ניכר מהשירות שירתתי
               בלבנון, בעיר צידון ובמארבים על נהר האלמלי. לאחר שהתפנינו לרצועת
@@ -53,9 +56,7 @@ export default function Teacher() {
               לא משמעותי עד תום הזמן הכולל.
             </p>
           </div>
-          <div className="card-graphic padded" style={{ flexGrow: 0.5 }}>
-            <img src={armyPhoto} class="image" alt="Taichi" />
-          </div>
+          <img src={armyPhoto} className="card-graphic padded"></img>
         </div>
         <div className="mycard padded flipped">
           <div className="card-info">
@@ -74,17 +75,35 @@ export default function Teacher() {
               </BulletList>
             </div>
           </div>
-          <div className="card-graphic padded" style={{ flexGrow: 0.5 }}>
-            <img src={armyPhoto} class="image" alt="Taichi" />
-          </div>
+          <img src={karatePhoto} className="card-graphic padded"></img>
         </div>
         <div className="mycard padded">
           <div className="card-info">
-            <p></p>
+            <div>
+              <p>ב-2004 פתחתי את בית הספר שלי בשרון, שפועל עד עתה.</p>
+
+              <p>מ-1989, בנוסף לאומנויות הלחימה, אני עוסק בלימוד רציף של:</p>
+
+              <BulletList>
+                <>אנתרופולוגיה – ביולוגית, חברתית, שפות.</>
+                <>
+                  ארכיאולוגיה – בעיקר בשני הענפים הראשונים – התפתחות המין האנושי
+                  והתפתחות התרבויות.
+                </>
+                <>
+                  דתות ותיאולוגיה – נצרות, אסלאם, דתות מהמזרח הרחוק ובעיקר
+                  יהדות.
+                </>
+                <>אסטרונומיה – אסטרופיזיקה ובעיקר קוסמולוגיה.</>
+              </BulletList>
+            </div>
           </div>
-          <div className="card-graphic padded" style={{ flexGrow: 0.5 }}>
-            <img src={armyPhoto} class="card-grpahic image" alt="Taichi" />
-          </div>
+
+          <img
+            src={schoolPhoto}
+            className="card-graphic padded"
+            alt="בית הספר שלי בשרון"
+          />
         </div>
       </div>
     </div>

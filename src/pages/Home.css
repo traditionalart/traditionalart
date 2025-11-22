@@ -1,0 +1,9 @@
+.swiper.home-swiper {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .swiper.home-swiper {
+    width: 100%;
+  }
+}

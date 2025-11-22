@@ -17,31 +17,30 @@ export default function Home() {
 
   return (
     <div className="page">
-      <div className="mycard">
+      <div className="mycard padded">
         <header className="card-info centered">נאנקינג טאי' צי'</header>
 
-        <div class="card-graphic">
-          <Swiper
-            effect={"fade"}
-            speed={1200}
-            loop={true}
-            autoplay={{ delay: 3000 }}
-            modules={[EffectFade, Autoplay]}
-          >
-            <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-            </SwiperSlide>
-          </Swiper>
-        </div>
+        <Swiper
+          effect={"fade"}
+          speed={1200}
+          loop={true}
+          autoplay={{ delay: 3000 }}
+          modules={[EffectFade, Autoplay]}
+          className="card-graphic home-swiper"
+        >
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );

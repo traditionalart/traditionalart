@@ -103,9 +103,11 @@ export default function Taichi() {
           </Collapsible>
         </div>
 
-        <div className="card-graphic padded" id="taichiGraphic">
-          <img src={TaichiImg} class="image" alt="Taichi" />
-        </div>
+        <img
+          src={TaichiImg}
+          className="card-graphic padded"
+          id="taichiGraphic"
+        ></img>
       </div>
     </div>
   );

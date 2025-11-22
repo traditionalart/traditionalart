@@ -201,13 +201,8 @@ body {
 }
 
 .card-graphic {
-  flex: 1;
-  flex-basis: 0;
-  align-items: center;
-  justify-content: flex-end;
-  display: flex;
-  overflow: hidden;
   max-height: 400px;
+  max-width: 50%;
 }
 
 .swiper {
@@ -245,7 +240,7 @@ img {
 /* Responsive adjustments */
 @media (min-width: 768px) {
   .mycard.padded {
-    gap: 30px;
+    gap: 50px;
     padding: 0 50px 50px 50px;
   }
 }
@@ -267,5 +262,6 @@ img {
 
   .card-graphic {
     flex-basis: unset;
+    max-width: 85%;
   }
 }
