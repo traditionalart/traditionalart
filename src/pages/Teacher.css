@@ -1,9 +1,7 @@
-.teacher-page {
+.page.teacher-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
-  padding-top: 24px;
   overflow: hidden;
 }
 
@@ -69,6 +67,7 @@
   justify-content: center;
   gap: 24px;
   padding: 24px;
+  margin-bottom: 15px;
 }
 
 .trophy {

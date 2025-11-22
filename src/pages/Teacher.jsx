@@ -1,12 +1,14 @@
 import Title from "../components/title";
-import "./Teacher.css";
 import teacherPhoto from "../assets/graphics/teacher/teacher.jpg";
 import dan1Photo from "../assets/graphics/teacher/dan1.svg";
 import dan2Photo from "../assets/graphics/teacher/dan2.svg";
+import armyPhoto from "../assets/graphics/teacher/army.jpg";
+import BulletList from "../components/BulletList";
+import "./Teacher.css";
 
 export default function Teacher() {
   return (
-    <div className="teacher-page">
+    <div className="teacher-page page">
       <Title text="אפי דינר" subtitle="מייסד ומורה בית הספר"></Title>
 
       <img src={teacherPhoto} alt="Teacher" className="teacher-photo" />
@@ -36,22 +38,53 @@ export default function Teacher() {
         </div>
       </div>
 
-      <div className="mycard padded">
-        <div className="card-info">
-          <p>
-            שמי אפי.<br></br>
-            אני לומד ומתאמן מאז 1981.
-          </p>
-          <h5>שירות צבאי:</h5>
-          <p>
-            שירתתי כמג״יסט בגדוד 13 בחטיבת גולני. בחלק ניכר מהשירות שירתתי
-            בלבנון, בעיר צידון ובמארבים על נהר האלמלי. לאחר שהתפנינו לרצועת
-            הביטחון, מאסתי בלחימה, ולאחר שלושה חודשים בכלא צבאי המשכתי שירות לא
-            משמעותי עד תום הזמן הכולל.
-          </p>
+      <div style={{ paddingTop: "50px" }}>
+        <div className="mycard padded">
+          <div className="card-info">
+            <p>
+              שמי אפי.<br></br>
+              אני לומד ומתאמן מאז 1981.
+            </p>
+            <b>שירותי צבאי:</b>
+            <p>
+              שירתתי כמג״יסט בגדוד 13 בחטיבת גולני. בחלק ניכר מהשירות שירתתי
+              בלבנון, בעיר צידון ובמארבים על נהר האלמלי. לאחר שהתפנינו לרצועת
+              הביטחון, מאסתי בלחימה, ולאחר שלושה חודשים בכלא צבאי המשכתי שירות
+              לא משמעותי עד תום הזמן הכולל.
+            </p>
+          </div>
+          <div className="card-graphic padded" style={{ flexGrow: 0.5 }}>
+            <img src={armyPhoto} class="image" alt="Taichi" />
+          </div>
         </div>
-        <div className="card-graphic padded" id="taichiGraphic">
-          <img class="image" alt="Taichi" />
+        <div className="mycard padded flipped">
+          <div className="card-info">
+            <div>
+              <p>
+                עם השחרור חזרתי לאימונים סדירים בקראטה, ולאחר זמן קצר גיליתי את
+                האומנויות הסיניות הפנימיות, ומאז עד היום אני מתאמן בצורה סדירה
+                ורציפה באומנויות אלו:
+              </p>
+
+              <BulletList>
+                <>טאי צ׳י צ׳ואן</>
+                <>שינג אי</>
+                <>פה-קואה</>
+                <>כלי נשק מסורתיים</>
+              </BulletList>
+            </div>
+          </div>
+          <div className="card-graphic padded" style={{ flexGrow: 0.5 }}>
+            <img src={armyPhoto} class="image" alt="Taichi" />
+          </div>
+        </div>
+        <div className="mycard padded">
+          <div className="card-info">
+            <p></p>
+          </div>
+          <div className="card-graphic padded" style={{ flexGrow: 0.5 }}>
+            <img src={armyPhoto} class="card-grpahic image" alt="Taichi" />
+          </div>
         </div>
       </div>
     </div>

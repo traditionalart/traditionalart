@@ -50,6 +50,11 @@ body {
   margin: 0;
   font-family: mainFont;
   color: rgb(0, 0, 0);
+  font-size: 1.25rem;
+}
+
+.page {
+  padding-top: 24px;
 }
 
 #content {
@@ -177,6 +182,10 @@ body {
   overflow: hidden;
 }
 
+.mycard.flipped {
+  flex-direction: row-reverse;
+}
+
 .card-info {
   flex: 1;
   flex-basis: 0;
@@ -195,10 +204,10 @@ body {
   flex: 1;
   flex-basis: 0;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   display: flex;
   overflow: hidden;
-  max-height: 500px;
+  max-height: 400px;
 }
 
 .swiper {
@@ -237,15 +246,19 @@ img {
 @media (min-width: 768px) {
   .mycard.padded {
     gap: 30px;
-    padding: 30px;
+    padding: 0 50px 50px 50px;
   }
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .mycard {
+  .mycard,
+  .mycard.flipped {
     flex-direction: column;
     align-items: center;
+  }
+  .mycard.flipped .card-graphic {
+    justify-content: flex-end;
   }
 
   .card-info {
