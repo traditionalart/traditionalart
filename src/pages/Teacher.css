@@ -83,6 +83,13 @@
   height: auto;
 }
 
+.dan-icon {
+  display: inline-block;
+  height: 1em;
+  margin-inline-start: 6px;
+  vertical-align: middle;
+}
+
 @media (max-width: 768px) {
   .trophies-row {
     flex-direction: column;

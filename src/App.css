@@ -256,8 +256,8 @@ img {
     justify-content: flex-end;
   }
 
-  .card-info {
-    padding: 20px;
+  .nav-link::after {
+    display: none;
   }
 
   .card-graphic {

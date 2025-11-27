@@ -28,6 +28,11 @@
   transition: all 0.3s ease;
 }
 
+#mynavbar .nav-link {
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+}
+
 #mynavbar::before {
   content: "";
   position: absolute;
@@ -71,6 +76,16 @@
   .overlay-collapse {
     position: static; /* normal behavior on desktop */
   }
+
+  /* Shrink navbar on scroll */
+  #mynavbar.shrink {
+    height: 60px; /* smaller navbar height */
+    font-size: 1rem;
+  }
+
+  #mynavbar.shrink .nav-link {
+    padding: 8px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -94,10 +109,4 @@
   .nav-link {
     padding-right: 10px;
   }
-}
-
-/* Shrink navbar on scroll */
-#mynavbar.shrink {
-  height: 60px; /* smaller navbar height */
-  font-size: 1rem;
 }

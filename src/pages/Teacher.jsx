@@ -4,7 +4,8 @@ import dan1Photo from "../assets/graphics/teacher/dan1.svg";
 import dan2Photo from "../assets/graphics/teacher/dan2.svg";
 import armyPhoto from "../assets/graphics/teacher/army.jpg";
 import karatePhoto from "../assets/graphics/teacher/karate.jpg";
-import schoolPhoto from "../assets/graphics/teacher/school.jpg";
+import taichiPhoto from "../assets/graphics/teacher/taichi.jpg";
+import dojoPhoto from "../assets/graphics/teacher/dojo.jpg";
 import libraryPhoto from "../assets/graphics/teacher/library.jpg";
 import BulletList from "../components/BulletList";
 import "./Teacher.css";
@@ -23,42 +24,52 @@ export default function Teacher() {
           <div id="teacher-transition" className="top-transition"></div>
           <div id="bamboo-left" className="top-transition bamboo"></div>
           <div id="bamboo-right" className="top-transition bamboo"></div>
-
-          <div className="trophy">
-            <img src={dan1Photo} alt="" />
-            <div className="trophy-text">דרגת דאן 1 בקראטה</div>
-          </div>
-
-          <div className="trophy">
-            <img src="/path/to/trophy2.png" alt="" />
-            <div className="trophy-text">תיאור 2</div>
-          </div>
-
-          <div className="trophy">
-            <img src={dan2Photo} alt="" />
-            <div className="trophy-text">דרגת דאן 2 באייקידו</div>
-          </div>
         </div>
       </div>
 
-      <div style={{ paddingTop: "50px" }}>
-        <div className="mycard padded">
+      <div style={{ paddingTop: "3rem" }}></div>
+      <div className="mycard padded">
+        <div className="card-info">
+          <p>
+            שמי אפי.<br></br>
+            אני לומד ומתאמן מאז 1981.
+          </p>
+          <br></br>
+          <b>תקופת האומנויות היפניות</b>
+          <p>
+            תחילת דרכי באומנויות הלחימה הייתה באומנויות היפניות. עסקתי כ־12 שנה
+            באומנויות אלו:
+          </p>
+
+          <BulletList>
+            <>
+              קרטה – שוטוקאן (Shotokan) – דאן 1
+              <img src={dan1Photo} alt="Dan 1" className="dan-icon" />
+            </>
+            <>
+              אייאידו (Muso Shinden-Ryu) – דאן 2
+              <img src={dan2Photo} alt="Dan 2" className="dan-icon" />
+            </>
+            <>אייקידו – בעיקר בשיטת קינומיצ'י (Kinomichi)</>
+          </BulletList>
+        </div>
+
+        <img src={karatePhoto} className="card-graphic padded" />
+      </div>
+      <div>
+        <div className="mycard padded flipped">
           <div className="card-info">
+            <b>שירותי הצבאי</b>
             <p>
-              שמי אפי.<br></br>
-              אני לומד ומתאמן מאז 1981.
-            </p>
-            <b>שירותי הצבאי:</b>
-            <p>
-              שירתתי כמג״יסט בגדוד 13 בחטיבת גולני. בחלק ניכר מהשירות שירתתי
-              בלבנון, בעיר צידון ובמארבים על נהר האלמלי. לאחר שהתפנינו לרצועת
-              הביטחון, מאסתי בלחימה, ולאחר שלושה חודשים בכלא צבאי המשכתי שירות
-              לא משמעותי עד תום הזמן הכולל.
+              שירתתי כמאג״יסט בגדוד 13 בחטיבת גולני. בחלק ניכר מהשירות שירתתי
+              בלבנון, בעיר צידון ובמארבים על נהר אל-אוואלי. לאחר שהתפנינו לרצועת
+              הביטחון, מאסתי בלחימה ללא תכלית, ולאחר שלושה חודשים בכלא צבאי
+              המשכתי שירות לא משמעותי עד תום הזמן, כולל.
             </p>
           </div>
           <img src={armyPhoto} className="card-graphic padded"></img>
         </div>
-        <div className="mycard padded flipped">
+        <div className="mycard padded">
           <div className="card-info">
             <div>
               <p>
@@ -75,9 +86,10 @@ export default function Teacher() {
               </BulletList>
             </div>
           </div>
-          <img src={karatePhoto} className="card-graphic padded"></img>
+          <img src={taichiPhoto} className="card-graphic padded"></img>
         </div>
-        <div className="mycard padded">
+
+        <div className="mycard padded flipped">
           <div className="card-info">
             <div>
               <p>ב-2004 פתחתי את בית הספר שלי בשרון, שפועל עד עתה.</p>
@@ -85,10 +97,9 @@ export default function Teacher() {
               <p>מ-1989, בנוסף לאומנויות הלחימה, אני עוסק בלימוד רציף של:</p>
 
               <BulletList>
-                <>אנתרופולוגיה – ביולוגית, חברתית, שפות.</>
                 <>
-                  ארכיאולוגיה – בעיקר בשני הענפים הראשונים – התפתחות המין האנושי
-                  והתפתחות התרבויות.
+                  אנתרופולוגיה – בעיקר בשני הענפים הראשונים – התפתחות המין
+                  האנושי והתפתחות התרבויות.
                 </>
                 <>
                   דתות ותיאולוגיה – נצרות, אסלאם, דתות מהמזרח הרחוק ובעיקר
@@ -100,12 +111,12 @@ export default function Teacher() {
           </div>
 
           <img
-            src={schoolPhoto}
+            src={dojoPhoto}
             className="card-graphic padded"
             alt="בית הספר שלי בשרון"
           />
         </div>
-        <div className="mycard padded flipped">
+        <div className="mycard padded">
           <div className="card-info">
             <div>
               <p>
