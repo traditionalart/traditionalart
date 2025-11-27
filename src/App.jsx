@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Teacher from "./pages/Teacher";
 import Footer from "./components/footer";
 import "./App.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
@@ -15,6 +16,8 @@ export default function App() {
       <div id="everything">
         <div id="bg-image" className="background"></div>
         <Navbar />
+        <ScrollToTop />
+
         <main id="content">
           <Routes>
             <Route path="/" element={<Home />} />
