@@ -4,9 +4,9 @@ import dan1Photo from "../assets/graphics/teacher/dan1.svg";
 import dan2Photo from "../assets/graphics/teacher/dan2.svg";
 import armyPhoto from "../assets/graphics/teacher/army.jpg";
 import karatePhoto from "../assets/graphics/teacher/karate.jpg";
-import taichiPhoto from "../assets/graphics/teacher/taichi.jpg";
-import dojoPhoto from "../assets/graphics/teacher/dojo.jpg";
-import libraryPhoto from "../assets/graphics/teacher/library.jpg";
+import taichiPhoto from "../assets/graphics/teacher/taichi2.png";
+import dojoPhoto from "../assets/graphics/teacher/school2.jpg";
+import libraryPhoto from "../assets/graphics/teacher/meditation.jpg";
 import BulletList from "../components/BulletList";
 import "./Teacher.css";
 

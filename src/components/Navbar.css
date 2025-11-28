@@ -16,6 +16,8 @@
   height: 100%;
   position: relative;
   flex-wrap: nowrap;
+  /*margin: 0 !important;*/
+  max-width: 1200px !important;
 }
 
 #mynavbar {
@@ -37,7 +39,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../assets/leaves.svg");
+  background-image: url("../assets/graphics/navbar/leaves.svg");
   background-size: 1500px;
   background-position: -130px 5px;
   background-repeat: repeat-x;
@@ -50,7 +52,7 @@
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:hover {
-  background-color: var(--primary);
+  background-color: unset;
   border: none;
   outline: none;
   box-shadow: none;
@@ -58,13 +60,18 @@
 
 .navbar-brand {
   height: 100%;
-  flex-grow: 1;
   padding: 0;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: start;
-  padding: 5px 0;
+  padding: 10px 0;
+  flex-grow: 1;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+  flex-basis: auto;
 }
 
 #logo {
@@ -93,6 +100,7 @@
     justify-content: flex-start;
     margin: 0;
     max-width: unset !important;
+    gap: 0;
   }
 
   .navbar-brand {

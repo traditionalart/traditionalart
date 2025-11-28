@@ -202,7 +202,7 @@ body {
 
 .card-graphic {
   max-height: 400px;
-  max-width: 50%;
+  max-width: 45%;
 }
 
 .swiper {
@@ -247,6 +247,11 @@ img {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .mycard.padded {
+    gap: 25px;
+    padding: 0 25px 25px 25px;
+  }
+
   .mycard,
   .mycard.flipped {
     flex-direction: column;
@@ -262,6 +267,6 @@ img {
 
   .card-graphic {
     flex-basis: unset;
-    max-width: 85%;
+    max-width: 100%;
   }
 }

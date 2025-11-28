@@ -47,6 +47,22 @@ export default function AppNavbar() {
             <Nav.Link
               className="clickable"
               as={NavLink}
+              to="/teacher"
+              onClick={() => setExpanded(false)}
+            >
+              המורה
+            </Nav.Link>
+            <Nav.Link
+              className="clickable"
+              as={NavLink}
+              to="/dojo"
+              onClick={() => setExpanded(false)}
+            >
+              בית בספר
+            </Nav.Link>
+            <Nav.Link
+              className="clickable"
+              as={NavLink}
               to="/taichi"
               onClick={() => setExpanded(false)}
             >
@@ -55,18 +71,19 @@ export default function AppNavbar() {
             <Nav.Link
               className="clickable"
               as={NavLink}
-              to="/teacher"
+              to="/qigong"
               onClick={() => setExpanded(false)}
             >
-              המורה
+              צ'י קונג
             </Nav.Link>
+
             <Nav.Link
               className="clickable highlight"
               as={NavLink}
-              to="/contact"
+              to="/plans"
               onClick={() => setExpanded(false)}
             >
-              צור קשר
+              לוח שיעורים
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

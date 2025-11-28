@@ -4,7 +4,7 @@ import BulletIcon from "../assets/graphics/misc/leafBullet.svg?react";
 
 export default function BulletList({ children }) {
   return (
-    <div>
+    <div style={{ lineHeight: "2" }}>
       {React.Children.map(children, (child, i) => (
         <BulletedLine key={i} icon={BulletIcon}>
           {child}

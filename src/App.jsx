@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Taichi from "./pages/taichi";
-import Contact from "./pages/Contact";
+import Plans from "./pages/Plans";
 import Teacher from "./pages/Teacher";
 import Footer from "./components/footer";
 import "./App.css";
@@ -23,7 +23,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/taichi" element={<Taichi />} />
             <Route path="/teacher" element={<Teacher />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/plans" element={<Plans />} />
           </Routes>
         </main>
         <Footer />
