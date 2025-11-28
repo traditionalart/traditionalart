@@ -241,6 +241,10 @@ img {
   max-height: 100%;
 }
 
+a {
+  color: currentColor;
+}
+
 /* Responsive adjustments */
 @media (min-width: 768px) {
   .mycard.padded {

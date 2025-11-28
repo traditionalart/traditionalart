@@ -1,5 +1,7 @@
 import CalendarIcon from "../assets/graphics/plans/calendar.svg?react";
 import MoneyIcon from "../assets/graphics/plans/shekel.svg?react";
+import locationIcon from "../assets/graphics/plans/location.svg?react";
+import scheduleIcon from "../assets/graphics/plans/schedule.svg?react";
 import BulletedLine from "../components/BulletedLine";
 import ArrowDownIcon from "../assets/graphics/plans/arrow-down.svg?react";
 import taichiPhoto from "../assets/graphics/plans/taichi.jpg";
@@ -12,10 +14,50 @@ export default function Contact() {
   return (
     <>
       <div style={{ paddingTop: "3rem" }}></div>
-
+      <div className="mycard padded">
+        <div>
+          <BulletedLine icon={locationIcon}>
+            השיעורים מתקיימים בדוג'ו ייעודי שממוקם{" "}
+            <a
+              className="hyperlink"
+              href="https://www.google.com/maps/place/קדימה+צורן"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              בקדימה צורן
+            </a>
+            .
+          </BulletedLine>
+          <BulletedLine icon={scheduleIcon}>
+            לקביעת שיעור ניתן לפנות ל-
+            <a
+              className="hyperlink"
+              href="https://wa.me/972584587058"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              058-458-7058
+            </a>{" "}
+            או להשאיר פרטים{" "}
+            <a
+              className="hyperlink"
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({
+                  top: document.body.scrollHeight,
+                  behavior: "smooth",
+                });
+              }}
+            >
+              בתחתית העמוד↓
+            </a>
+          </BulletedLine>
+        </div>
+      </div>
       <div id="plans" className="mycard padded">
         <LessonPlan
-          title="שיעורי טאי צ'י וצ'י קונג"
+          title="טאי צ'י ו-צ'י קונג"
           img={taichiPhoto}
           items={[
             { icon: CalendarIcon, text: "ימי א' 19:30 - 18:00" },
@@ -23,7 +65,7 @@ export default function Contact() {
           ]}
         />
         <LessonPlan
-          title="שיעורי שינג אי ופה קואה"
+          title="שינג אי ו-פה קואה"
           img={shingiPhoto}
           items={[
             { icon: CalendarIcon, text: "ימי ד' 20:00 - 18:00" },
@@ -31,7 +73,7 @@ export default function Contact() {
           ]}
         />
         <LessonPlan
-          title="שיעורים פרטיים"
+          title="שיעורים אישיים"
           img={privatePhoto}
           items={[
             { icon: CalendarIcon, text: "כל ימי ושעות השבוע" },
@@ -43,15 +85,15 @@ export default function Contact() {
   );
 }
 
-function BookClassButton({ children }) {
+function ContactButton({ children }) {
   const handleClick = () => {
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   };
 
   return (
-    <button className="book-class-button" onClick={handleClick}>
-      {children} <ArrowDownIcon className="arrow-icon" />
-    </button>
+    <div onClick={handleClick} className="hyperlink">
+      {children}
+    </div>
   );
 }
 

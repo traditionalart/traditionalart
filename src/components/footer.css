@@ -3,7 +3,7 @@
   color: var(--text);
   padding: 25px 15px;
   text-align: center;
-  font-size: 14px;
+  font-size: 1rem;
   direction: rtl;
   position: relative;
   bottom: 0;
@@ -47,7 +47,6 @@
 .footer-bottom {
   border-top: 1px solid #333;
   padding-top: 10px;
-  font-size: 13px;
   color: #888;
 }
 

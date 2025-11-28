@@ -58,7 +58,7 @@ export default function AppNavbar() {
               to="/dojo"
               onClick={() => setExpanded(false)}
             >
-              בית בספר
+              הדוג'ו
             </Nav.Link>
             <Nav.Link
               className="clickable"
