@@ -13,8 +13,7 @@ import Title from "../components/title";
 export default function Contact() {
   return (
     <>
-      <div style={{ paddingTop: "3rem" }}></div>
-      <div className="mycard padded">
+      <div id="plansTopCard" className="mycard padded-top">
         <div>
           <BulletedLine icon={locationIcon}>
             השיעורים מתקיימים בדוג'ו ייעודי שממוקם{" "}

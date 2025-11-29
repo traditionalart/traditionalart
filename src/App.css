@@ -250,17 +250,32 @@ a {
 
 /* Responsive adjustments */
 @media (min-width: 768px) {
+  .mycard {
+    gap: 50px;
+    padding: 20px 50px;
+  }
   .mycard.padded {
     gap: 50px;
     padding: 0 50px 50px 50px;
+  }
+  .mycard.padded-top {
+    gap: 50px;
+    padding-top: 50px;
   }
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .mycard {
+    gap: 25px;
+    padding: 10px 20px;
+  }
   .mycard.padded {
     gap: 25px;
     padding: 0 25px 25px 25px;
+  }
+  .mycard.padded-top {
+    padding-top: 25px;
   }
 
   .mycard,

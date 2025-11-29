@@ -27,8 +27,7 @@ export default function Teacher() {
         </div>
       </div>
 
-      <div style={{ paddingTop: "3rem" }}></div>
-      <div className="mycard padded">
+      <div className="mycard padded padded-top">
         <div className="card-info">
           <p>
             שמי אפי.<br></br>
