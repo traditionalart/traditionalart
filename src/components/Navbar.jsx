@@ -55,14 +55,6 @@ export default function AppNavbar() {
             <Nav.Link
               className="clickable"
               as={NavLink}
-              to="/dojo"
-              onClick={() => setExpanded(false)}
-            >
-              הדוג'ו
-            </Nav.Link>
-            <Nav.Link
-              className="clickable"
-              as={NavLink}
               to="/taichi"
               onClick={() => setExpanded(false)}
             >

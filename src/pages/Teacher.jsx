@@ -1,5 +1,5 @@
 import Title from "../components/title";
-import teacherPhoto from "../assets/graphics/teacher/teacher.jpg";
+import teacherPhoto from "../assets/graphics/teacher/teacher2.png";
 import dan1Photo from "../assets/graphics/teacher/dan1.svg";
 import dan2Photo from "../assets/graphics/teacher/dan2.svg";
 import armyPhoto from "../assets/graphics/teacher/army.jpg";
@@ -98,13 +98,12 @@ export default function Teacher() {
               <BulletList>
                 <>
                   אנתרופולוגיה – בעיקר בענפים הראשונים – התפתחות המין האנושי
-                  והתפתחות התרבויות.
+                  והתפתחות התרבויות
                 </>
                 <>
-                  דתות ותיאולוגיה – נצרות, אסלאם, דתות מהמזרח הרחוק ובעיקר
-                  יהדות.
+                  דתות ותיאולוגיה – נצרות, אסלאם, דתות מהמזרח הרחוק ובעיקר יהדות
                 </>
-                <>אסטרונומיה – אסטרופיזיקה ובעיקר קוסמולוגיה.</>
+                <>אסטרונומיה – אסטרופיזיקה ובעיקר קוסמולוגיה</>
               </BulletList>
             </div>
           </div>
@@ -138,7 +137,6 @@ export default function Teacher() {
                 <>מנסון – צ׳רלס מנסון</>
                 <>קונדליני יוגה – יוגי בהאג׳אן / גורו ג׳אגט</>
               </BulletList>
-              ועוד
             </div>
           </div>
 

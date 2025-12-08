@@ -6,7 +6,7 @@ import audienceIcon from "../assets/graphics/plans/audience.svg?react";
 import BulletedLine from "../components/BulletedLine";
 import ArrowDownIcon from "../assets/graphics/plans/arrow-down.svg?react";
 import taichiPhoto from "../assets/graphics/plans/taichi.jpg";
-import shingiPhoto from "../assets/graphics/plans/private.png";
+import shingiPhoto from "../assets/graphics/plans/shingi.jpg";
 import privatePhoto from "../assets/graphics/plans/private.png";
 import "./Plans.css";
 import Title from "../components/title";
