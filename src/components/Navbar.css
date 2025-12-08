@@ -22,7 +22,7 @@
 
 #mynavbar {
   z-index: 1000;
-  height: 80px;
+  height: var(--nav-height);
   position: sticky;
   padding: 0;
   justify-content: center;

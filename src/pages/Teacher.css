@@ -10,7 +10,7 @@
 .trophies-wrapper {
   position: relative;
   width: 100%;
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 .top-transition {
@@ -30,14 +30,14 @@
   height: 200px;
   mask-image: url("../assets/graphics/misc/transition.svg");
   -webkit-mask-image: url("../assets/graphics/misc/transition.svg");
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 .bamboo {
   height: 500px;
   width: 300px;
   margin-bottom: 30px;
   max-height: 120vw;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   mask-size: contain;
   -webkit-mask-size: contain;
   mask-position: bottom;

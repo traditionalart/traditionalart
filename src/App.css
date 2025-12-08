@@ -1,12 +1,10 @@
 :root {
   --text: #1d1d1d;
   --background: #ffffff;
-  --primary: #acd5ac;
-  --accentLight: #e57a7a;
-  --primaryDark: #000000;
-  --accent: #1eff00;
-  --accentDark: #93da93;
-  --accentDarkest: #08200a;
+  --primary: #d3ddd3;
+  --secondary: #a5cfa5;
+  --accent: #67ac67;
+  --nav-height: 80px;
 }
 
 #everything {
@@ -90,10 +88,14 @@ body {
   right: -6%;
   bottom: 0;
   position: absolute;
-  background-color: var(--primary);
+  background-color: var(--accent);
   z-index: -5;
   mix-blend-mode: multiply;
   overflow: visible;
+}
+
+.info-box::before {
+  background-color: var(--primary);
 }
 
 .clickable {
