@@ -14,22 +14,23 @@ import "./Teacher.css";
 export default function Teacher() {
   return (
     <div className="teacher-page page">
-      <Title
-        text="אפי דינר"
-        subtitle={"מייסד ומורה בית הספר"}
-        center={true}
-      ></Title>
-      <img src={teacherPhoto} alt="Teacher" className="teacher-photo" />
+      <div className="teacher-page-intro">
+        <Title
+          text="אפי דינר"
+          subtitle={"מייסד ומורה בית הספר"}
+          center={true}
+        ></Title>
+        <img src={teacherPhoto} alt="Teacher" className="teacher-photo" />
 
-      <div id="teacher-top-graphic">
-        <div className="transition-wrapper" id="teacher-transition-wrapper">
-          <div className="transition-peak"></div>
-          <div className="transition-fill"></div>
+        <div id="teacher-top-graphic">
+          <div className="transition-wrapper" id="teacher-transition-wrapper">
+            <div className="transition-peak"></div>
+            <div className="transition-fill"></div>
+          </div>
+          <div id="" className="bamboo-left bamboo"></div>
+          <div id="" className="bamboo-right bamboo"></div>
         </div>
-        <div id="" className="bamboo-left bamboo"></div>
-        <div id="" className="bamboo-right bamboo"></div>
       </div>
-
       <div className="mycard padded padded-top">
         <div className="card-info">
           <p>

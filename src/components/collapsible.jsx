@@ -6,6 +6,7 @@ import {
   useImperativeHandle,
 } from "react";
 import "./Collapsible.css";
+import { scrollToElement } from "../Helpers";
 
 const Collapsible = forwardRef(function Collapsible({ title, children }, ref) {
   const [open, setOpen] = useState(false);
@@ -23,17 +24,7 @@ const Collapsible = forwardRef(function Collapsible({ title, children }, ref) {
       if (!open) toggle();
     },
     scrollTo: () => {
-      const el = headerRef.current;
-      const nav = document.getElementById("mynavbar");
-      const navbarHeight = nav ? nav.offsetHeight : 0;
-
-      const y =
-        el.getBoundingClientRect().top + window.scrollY - navbarHeight - 10;
-
-      window.scrollTo({
-        top: y,
-        behavior: "smooth",
-      });
+      scrollToElement(headerRef.current);
     },
   }));
 

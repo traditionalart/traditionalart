@@ -11,6 +11,7 @@ import privatePhoto from "../assets/graphics/plans/private3.jpg";
 import BrushFrame from "../components/BrushFrame";
 import "./Plans.css";
 import Title from "../components/title";
+import { scrollToElement } from "../Helpers";
 
 export default function Contact() {
   return (
@@ -50,10 +51,7 @@ export default function Contact() {
               href="#"
               onClick={(e) => {
                 e.preventDefault();
-                window.scrollTo({
-                  top: document.body.scrollHeight,
-                  behavior: "smooth",
-                });
+                scrollToElement("contact");
               }}
             >
               בתחתית העמוד↓
