@@ -116,4 +116,32 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
+  position: relative;
+}
+
+#about-teacher-preview {
+  flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  background-color: var(--primary);
+  gap: 30px;
+  position: relative;
+}
+
+#about-teacher-preview .image-with-button-frame {
+  max-width: 90%;
+}
+
+#about-teacher-preview #image-with-button {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+}
+
+#about-teacher-button {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
 }

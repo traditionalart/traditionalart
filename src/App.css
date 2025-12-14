@@ -1,7 +1,7 @@
 :root {
   --text: #333333;
   --background: #ffffff;
-  --primary: #d3ddd3;
+  --primary: #e6f4e4;
   --secondary: #a5cfa5;
   --accent: #699069;
   --accent-dark: #4d7d4d;
@@ -304,6 +304,8 @@ a {
     flex-basis: unset;
     width: 100%;
     max-width: 100%;
+    height: auto !important;
+    max-height: unset;
   }
 }
 

@@ -4,6 +4,7 @@ import "swiper/css";
 import "./Home.css";
 import OpeningVideo from "../assets/graphics/home/opener.webm"; // adjust path
 import TaichiImg from "../assets/graphics/home/taichi.png";
+import TeacherImg from "../assets/graphics/home/teacher.jpg";
 
 import Collapsible from "../components/collapsible";
 import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -16,6 +17,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import SplitSection from "../components/SplitSection";
+import BrushFrame from "../components/BrushFrame";
 
 export default function Home() {
   //const images = ["./slideshow/img1", "./slideshow/img2", "./slideshow/img3"]ddfdfd;
@@ -95,30 +97,24 @@ export default function Home() {
         button2Link="/plans"
       />
 
-      <div className="mycard padded">
-        <header className="card-info centered">נאנקינג טאי' צי'</header>
-
-        <Swiper
-          effect={"fade"}
-          speed={1200}
-          loop={true}
-          autoplay={{ delay: 3000 }}
-          modules={[EffectFade, Autoplay]}
-          className="card-graphic home-swiper"
-        >
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-          </SwiperSlide>
-        </Swiper>
+      <div id="about-teacher-preview" className="page-wide-wrapper">
+        <Title text="אפי דינר" subtitle="מייסד ומורה בית הספר"></Title>
+        <BrushFrame className="image-with-button-frame">
+          <div id="image-with-button">
+            <img src={TeacherImg}></img>
+            <BrushFrame
+              id="about-teacher-button"
+              color="var(--accent)"
+              backgroundColor="var(--background)"
+            >
+              <div>
+                <a className="pill-button clickable" href={"/teacher"}>
+                  על המורה
+                </a>
+              </div>
+            </BrushFrame>
+          </div>
+        </BrushFrame>
       </div>
     </div>
   );

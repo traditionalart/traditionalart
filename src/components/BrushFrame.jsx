@@ -17,6 +17,7 @@ export default function BrushFrame({
   overshoot = 12,
   thickness = 7,
   color = "var(--accent)",
+  backgroundColor = "unset",
 }) {
   return (
     <div
@@ -49,7 +50,10 @@ export default function BrushFrame({
       })}
       <div
         className="brush-frame-content"
-        style={{ padding: `${thickness / 2}px` }}
+        style={{
+          padding: `${thickness / 2}px`,
+          backgroundColor: backgroundColor,
+        }}
       >
         {children}
       </div>

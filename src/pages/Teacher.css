@@ -130,3 +130,43 @@
     display: none;
   }
 }
+
+#teacher-story-wrapper {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.timeline-wrapper {
+  margin-right: 25px;
+  margin-top: 10px;
+  width: 20%;
+  min-height: 100px;
+  position: relative;
+}
+
+.timeline-track {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-mask-repeat: repeat-y;
+  -webkit-mask-position: top;
+  -webkit-mask-size: auto;
+  mask-repeat: repeat-y;
+  mask-position: top;
+  mask-size: auto;
+  top: 0;
+}
+
+.track1 {
+  -webkit-mask-image: url("../assets/graphics/teacher/timelineTrack2.svg");
+  mask-image: url("../assets/graphics/teacher/timelineTrack2.svg");
+
+  background-color: var(--primary); /* color for first track */
+}
+
+.track2 {
+  -webkit-mask-image: url("../assets/graphics/teacher/timelineTrack1.svg");
+  mask-image: url("../assets/graphics/teacher/timelineTrack1.svg");
+  background-color: var(--secondary); /* color for second track */
+}

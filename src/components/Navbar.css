@@ -25,7 +25,6 @@
 #mynavbar {
   z-index: 1000;
   height: var(--nav-height);
-  position: sticky;
   padding: 0;
   justify-content: center;
   background-color: rgb(250, 249, 245) !important;
