@@ -1,6 +1,7 @@
 import React from "react";
 import "./SplitSection.css";
 import BrushFrame from "./BrushFrame";
+import { motion } from "framer-motion";
 
 export default function SplitSection({
   title,
@@ -14,8 +15,16 @@ export default function SplitSection({
   return (
     <div className="split-section">
       <div className="split-right">
-        <h2>{title}</h2>
-        <p>{text}</p>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }} // starting state
+          whileInView={{ opacity: 1, y: 0 }} // when scrolled into view
+          viewport={{ once: true, amount: 0.2 }} // trigger when 20% visible
+          transition={{ duration: 0.6 }} // animation duration
+        >
+          <h2>{title}</h2>
+          <p>{text}</p>{" "}
+        </motion.div>
+
         <div className="button-row">
           <BrushFrame fill={false}>
             <div>

@@ -12,8 +12,13 @@ import dojoPhoto from "../assets/graphics/teacher/school2.jpg";
 import libraryPhoto from "../assets/graphics/teacher/meditation.jpg";
 import BulletList from "../components/BulletList";
 import "./Teacher.css";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Teacher() {
+  const { scrollY } = useScroll();
+  const maskY = useTransform(scrollY, [0, 10000], [0, 14000]); // tune ranges
+  const maskPos = useTransform(maskY, (v) => `center ${v}px`);
+
   return (
     <div className="teacher-page page">
       <div className="teacher-page-intro">
@@ -34,20 +39,25 @@ export default function Teacher() {
         </div>
       </div>
       <div style={{ paddingTop: "25px" }}></div>
+
       <div id="teacher-story-wrapper">
         <div className="timeline-wrapper">
-          <div
+          <motion.div
             className="timeline-track track1"
             style={{
               WebkitMaskImage: `url(${timelineTrack1})`,
               maskImage: `url(${timelineTrack1})`,
+              WebkitMaskPosition: maskPos,
+              maskPosition: maskPos,
             }}
           />
-          <div
+          <motion.div
             className="timeline-track track2"
             style={{
               WebkitMaskImage: `url(${timelineTrack2})`,
               maskImage: `url(${timelineTrack2})`,
+              WebkitMaskPosition: maskPos,
+              maskPosition: maskPos,
             }}
           />
         </div>
@@ -123,12 +133,12 @@ export default function Teacher() {
           <div className="mycard padded flipped">
             <div className="card-info">
               <div>
-                <p>מ-1989, בנוסף לאומנויות הלחימה, אני עוסק בלימוד רציף של:</p>
+                <p>מ-1989, בנוסף לאומנויות הלחימה, אני עוסק בלמידה של:</p>
 
                 <BulletList>
                   <>
-                    אנתרופולוגיה – בעיקר בענפים הראשונים – התפתחות המין האנושי
-                    והתפתחות התרבויות
+                    אנתרופולוגיה – בעיקר בענפים התפתחות המין האנושי והתפתחות
+                    התרבויות
                   </>
                   <>
                     דתות ותיאולוגיה – נצרות, אסלאם, דתות מהמזרח הרחוק ובעיקר
@@ -145,7 +155,7 @@ export default function Teacher() {
               alt="בית הספר שלי בשרון"
             />
           </div>
-          <div className="mycard padded">
+          <div className="mycard padded" style={{ paddingBottom: 0 }}>
             <div className="card-info">
               <div>
                 <p>
@@ -180,6 +190,7 @@ export default function Teacher() {
           </div>
         </div>
       </div>
+      <div style={{ paddingTop: "25px" }}></div>
     </div>
   );
 }

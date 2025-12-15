@@ -16,12 +16,12 @@ import { scrollToElement } from "../Helpers";
 export default function Contact() {
   return (
     <div className="page">
-      <div className="mycard">
+      <div className="mycard padded">
         <div className="card-info">
           <Title text={"לוח שיעורים"} />
 
           <BulletedLine icon={audienceIcon}>
-            השיעורים מתאימים לכל הרמות ומיועדים לבני 20 ומעלה.{" "}
+            השיעורים מתאימים לכל הרמות ומיועדים לגילאי 20 ומעלה.{" "}
           </BulletedLine>
           <BulletedLine icon={locationIcon}>
             השיעורים מתקיימים בדוג'ו ייעודי שממוקם{" "}
@@ -71,10 +71,7 @@ export default function Contact() {
         <LessonPlan
           title="שינג אי ו-פה קואה"
           img={shingiPhoto}
-          items={[
-            { icon: CalendarIcon, text: "ימי ד' 20:00 - 18:00" },
-            { icon: MoneyIcon, text: 'תשלום חודשי: 400 ש"ח' },
-          ]}
+          items={[{ icon: CalendarIcon, text: "ימי ד' 20:00 - 18:00" }]}
         />
         <LessonPlan
           title="שיעורים אישיים"

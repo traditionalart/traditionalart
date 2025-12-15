@@ -1,9 +1,11 @@
-#home-page {
+.page#home-page {
   padding: 0;
+  overflow: unset;
 }
 
 .fs-video-container {
-  position: relative;
+  position: sticky;
+  top: 0;
   width: 100vw;
   height: calc(100vh - var(--nav-height) + 20px);
   overflow: hidden;
@@ -43,7 +45,6 @@
 .fs-video-container__subtitle {
   color: #fff;
   font-size: 2rem;
-  transform: translate(0, -15px);
 }
 
 @media (max-width: 768px) {
