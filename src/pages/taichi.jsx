@@ -1,7 +1,7 @@
 import { useRef, createRef } from "react";
 import Title from "../components/title";
 import "./taichi.css";
-import TaichiImg from "../assets/graphics/taichi/taichi.jpg";
+import TaichiImg from "../assets/graphics/taichi/taichi.webp";
 import Collapsible from "../components/collapsible";
 import BrushFrame from "../components/BrushFrame";
 

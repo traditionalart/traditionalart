@@ -3,9 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./Home.css";
 import OpeningVideo from "../assets/graphics/home/opener.webm"; // adjust path
-import TaichiImg from "../assets/graphics/home/taichi.png";
-import QigongImg from "../assets/graphics/home/qigong.png";
-import TeacherImg from "../assets/graphics/home/teacher.jpg";
+import TaichiImg from "../assets/graphics/home/taichi.webp";
+import QigongImg from "../assets/graphics/home/qigong.webp";
+import TeacherImg from "../assets/graphics/home/teacher.webp";
 
 import Collapsible from "../components/collapsible";
 import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
