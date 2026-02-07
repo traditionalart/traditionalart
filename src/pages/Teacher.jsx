@@ -1,5 +1,5 @@
 import Title from "../components/title";
-import teacherPhoto from "../assets/graphics/teacher/teacher2.webp";
+import teacherPhoto from "../assets/graphics/teacher/teacher4.webp";
 import timelineTrack1 from "../assets/graphics/teacher/timelineTrack1.svg";
 import timelineTrack2 from "../assets/graphics/teacher/timelineTrack2.svg";
 import dan1Photo from "../assets/graphics/teacher/dan1.svg";
